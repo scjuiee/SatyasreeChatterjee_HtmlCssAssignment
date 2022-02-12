@@ -4,120 +4,33 @@
 <head>
     <meta charset="utf-8">
     <title>Show Hide Dropdown Using CSS</title>
+    <link rel="stylesheet" href="css/main.css">
     <style>
-        header {
-            font-weight: bolder;
-            color: white;
-            font-size: xx-large;
-            text-align: right;
-            padding: 5px;
-            background-color: #2E362B;
-        }
-
-        ul {
-            padding: 0px;
-            list-style: none;
-            background: darkgray;
-        }
-
-        ul li {
-            display: inline-block;
-            position: relative;
-            line-height: 21px;
-            text-align: left;
-        }
-
-        ul li a {
-            display: block;
-            padding: 8px 25px;
-            color: white;
-            text-decoration: none;
-        }
-
-        ul li a:hover {
-            color: white;
-            background: black;
-        }
-
-        ul li ul.dropdown {
-            min-width: 100%;
-            /* Set width of the dropdown */
-            background: #2E362B;
-            display: none;
-            position: absolute;
-            z-index: 999;
-            left: 0;
-        }
-
-        ul li:hover ul.dropdown {
-            display: block;
-            /* Display the dropdown */
-        }
-
-        ul li ul.dropdown li {
-            display: block;
-        }
-
-        footer {
-            font-weight: bolder;
-            color: white;
-            font-size: small;
-            text-align: right;
-            padding: 10px;
-            background-color: black;
-        }
-
-        .body-inner {
-            background-color: white;
-            height: 100%;
-        }
-
-        #mydiv{
-            animation: backgroundanimate 16s infinite; width:950px; height:400px; 
-            background-repeat: no-repeat;
-            transition: background-image 1s ease-in-out;
-        }
-
-        #covidcareproducts{
-            margin: 10px;
-            overflow-x: auto;
-            white-space: nowrap;
-            overflow-x: scroll;
-        }
-
-        #diabetescareproducts{
-            margin: 10px;
-            overflow-x: auto;
-            white-space: nowrap;
-            overflow-x: scroll;
-        }
-        .products{
-            position: relative;
-            border-radius: 10px;
-            margin: 5px;
-            width: 300px;
-            height: 200px;
-            /*border: 2px solid green;*/
-            display: inline-block;
-        }
-
-        
-
         @keyframes backgroundanimate {
             0%,100%{
                 background-image: url("Images/Animation/ani1.jpg");
+                margin-left: auto;
+                margin-right: auto;
             }
             20%{
                 background-image: url("Images/Animation/ani2.png");
+                margin-left: auto;
+                margin-right: auto;
             }
             40%{
                 background-image: url("Images/Animation/ani3.jpg");
+                margin-left: auto;
+                margin-right: auto;
             }
             60%{
                 background-image: url("Images/Animation/ani4.jpg");
+                margin-left: auto;
+                margin-right: auto;
             }
             80%{
                 background-image: url("Images/Animation/ani5.jpg");
+                margin-left: auto;
+                margin-right: auto;
             }
         
         }
@@ -153,60 +66,103 @@
         </li>
     </ul>
     <section>
+    
     <div id='mydiv'></div>
     </section>
     <section>
             <article id="covidcareproducts">
                     <h2>Covid Care</h2>
                     <div class="products">
+                        <div><B>&nbsp;&nbsp;Covid Test Kit</B></div>
                         <a href="#">
                             <img src="Images/Products/c1.jpg" >
                         </a>
+                        <div><B>&nbsp;&nbsp;Rs: 40</B></div>
+                        <div><B>&nbsp;&nbsp;Offer Rs: 30</B></div>
+                        <button>Add To Cart</button>
                     </div>
             
                     <div class="products">
+                        <div><B>&nbsp;&nbsp;Covid Essentials</B></div>
+                        <br>    
+                        <br>
+                        <br>
                         <a href="#">
                             <img src="Images/Products/c2.jpg" >
                         </a>
+                        <div><B>&nbsp;&nbsp;Rs: 240</B></div>
+                        <div><B>&nbsp;&nbsp;Offer Rs: 170</B></div>
+                        <button>Add To Cart</button>
                     </div>
             
                     <div class="products">
+                        <div><B>&nbsp;&nbsp;Sanitizer Bottle</B></div>
                         <a href="#">
                             <img src="Images/Products/c3.jpg" >
                         </a>
+                        <div><B>&nbsp;&nbsp;Rs: 99</B></div>
+                        <div><B>&nbsp;&nbsp;Offer Rs: 87</B></div>
+                        <button>Add To Cart</button>
                     </div>
             
                     <div class="products">
+                        <div><B>&nbsp;&nbsp;Mask</B></div>
+                            <br>
+                            <br>
                         <a href="#">
                             <img src="Images/Products/c4.jpg" >
                         </a>
+                        <div><B>&nbsp;&nbsp;Rs: 45</B></div>
+                        <div><B>&nbsp;&nbsp;Offer Rs: 30</B></div>
+                        <button>Add To Cart</button>
                     </div>
             </article>
 
             <article id="diabetescareproducts">
                     <h2>Diabetes Care</h2>
                     <div class="products">
+                        <div><B>&nbsp;&nbsp;Tablets</B></div>
                         <a href="#">
                             <img src="Images/Products/d1.jpg"  style="width:50%">
                         </a>
+                        <div><B>&nbsp;&nbsp;Rs: 45</B></div>
+                        <div><B>&nbsp;&nbsp;Offer Rs: 30</B></div>
+                        <button>Add To Cart</button>
                     </div>
             
                     <div class="products">
+                        <div><B>&nbsp;&nbsp;Chawanprash</B></div>
                         <a href="#">
                             <img src="Images/Products/d2.jpg"  style="width:50%">
                         </a>
+                        <div><B>&nbsp;&nbsp;Rs: 45</B></div>
+                        <div><B>&nbsp;&nbsp;Offer Rs: 30</B></div>
+                        <button>Add To Cart</button>
                     </div>
             
                     <div class="products">
+                        <div><B>&nbsp;&nbsp;Toothpaste</B></div>
                         <a href="#">
                             <img src="Images/Products/d3.jpg"  style="width:50%">
                         </a>
+                        <div><B>&nbsp;&nbsp;Rs: 45</B></div>
+                        <div><B>&nbsp;&nbsp;Offer Rs: 30</B></div>
+                        <button>Add To Cart</button>
                     </div>
             
                     <div class="products">
+                        <div><B>&nbsp;&nbsp;Biscuit</B></div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
                         <a href="#">
                             <img src="Images/Products/d4.png"  style="width:50%">
                         </a>
+                        <div><B>&nbsp;&nbsp;Rs: 35</B></div>
+                        <div><B>&nbsp;&nbsp;Offer Rs: 30</B></div>
+                        <button>Add To Cart</button>
                     </div>
             </article>
     </section>
