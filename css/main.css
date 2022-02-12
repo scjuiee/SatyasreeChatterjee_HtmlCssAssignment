@@ -75,23 +75,39 @@ footer {
     margin: 10px;
     overflow-x: auto;
     white-space: nowrap;
-    overflow-x: scroll;
 }
 
 #diabetescareproducts{
     margin: 10px;
     overflow-x: auto;
     white-space: nowrap;
-    overflow-x: scroll;
 }
 .products{
     position: relative;
     border-radius: 10px;
     margin: 5px;
     width: 300px;
-    height: 200px;
-    /*border: 2px solid green;*/
+    height: 350px;
+    border: 1px solid green;
     display: inline-block;
+    padding: 5px;
+}
+
+button{
+    display: block;
+    margin: 20px;
+    width: 120px;
+    border-radius: 4px;
+    height: 30px;
+    color: orange;
+    font-size: 18px;
+    float: left;
+    background-color: white;
+    border: 2px solid;
+    border-color: blue;
+    padding: 5px;
+    
+    
 }
 
 @keyframes backgroundanimate {
